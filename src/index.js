@@ -1,7 +1,9 @@
 import "./styles.css";
+import { weatherVisuals } from "./weatherVisuals.js"
 
 const location = document.querySelector("#location");
 const searchForm = document.querySelector("#search-form");
+const changeDisplay = document.querySelector("#change-display");
 
 async function getWeather(place) {
     try {
@@ -20,13 +22,20 @@ async function getWeather(place) {
     
 }
 
-function displayWeather(data) {
-
-}
-
+// Listen for when the form is submitted
 searchForm.addEventListener("submit", (event) => {
     event.preventDefault();
     console.log(getWeather(location.value)
-        .then(value => console.log(value.description))
+        .then(data => weatherVisuals.displayWeather(data))
         .catch(error => console.log(error)));
 });
+
+// Listen for when the user wants to change temperature
+changeDisplay.addEventListener("click", () => {
+    weatherVisuals.changeTemp();
+});
+
+// Initialize a place
+getWeather("India")
+        .then(data => weatherVisuals.displayWeather(data))
+        .catch(error => console.log(error));

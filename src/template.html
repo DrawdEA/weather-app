@@ -9,20 +9,75 @@
     <section id="search-section">
         <form id="search-form">
             <label for="location">
-                Search for a place:
                 <input type="text" id="location">
             </label>
             <button type="submit" id="submit-button">Search</button>
         </form>
     </section>
     <section id="header-info">
-        <p>Calamba City</p>
-        <h1>26</h1>
-        <p>Partly Cloudy</p>
-        <p>H:31 L:23</p>
+        <p id="city"></p>
+        <h1 id="temperature"></h1>
+        <p id="weather-status"></p>
+        <p id="time"></p>
+        <img id="forecast-icon" alt="Forecast Logo">
+        
     </section>
     <section id="misc-info">
-
+        <div id="seven-day-forecast">
+            <div class="forecast-day">
+                <p class="forecast-data"></p>
+                <img class="forecast-logo" alt="Forecast Logo">
+                <p class="forecast-temp"></p>
+            </div>
+            <div class="forecast-day">
+                <p class="forecast-data"></p>
+                <img class="forecast-logo" alt="Forecast Logo">
+                <p class="forecast-temp"></p>
+            </div>
+            <div class="forecast-day">
+                <p class="forecast-data"></p>
+                <img class="forecast-logo" alt="Forecast Logo">
+                <p class="forecast-temp"></p>
+            </div>
+            <div class="forecast-day">
+                <p class="forecast-data"></p>
+                <img class="forecast-logo" alt="Forecast Logo">
+                <p class="forecast-temp"></p>
+            </div>
+            <div class="forecast-day">
+                <p class="forecast-data"></p>
+                <img class="forecast-logo" alt="Forecast Logo">
+                <p class="forecast-temp"></p>
+            </div>
+            <div class="forecast-day">
+                <p class="forecast-data"></p>
+                <img class="forecast-logo" alt="Forecast Logo">
+                <p class="forecast-temp"></p>
+            </div>
+            <div class="forecast-day">
+                <p class="forecast-data"></p>
+                <img class="forecast-logo" alt="Forecast Logo">
+                <p class="forecast-temp"></p>
+            </div>
+        </div>
+        <div id="miscs">
+            <div id="feels-like">
+                <p id="feels-like-header">Feels Like</p>
+                <h3 id="feels-like-temp"></h3>
+            </div>
+            <div id="sunrise">
+                <p id="sunrise-header">Sunrise</p>
+                <h3 id="sunrise-data"></h3>
+            </div>
+            <div id="wind">
+                <p id="wind-data"></p>
+                <p id="gusts-data"></p>
+                <p id="direction-data"></p>
+            </div>
+        </div>
+    </section>
+    <section id="change-temp">
+        <button id="change-display">Display Farenheit</button>
     </section>
     
 </body>

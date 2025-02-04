@@ -44,14 +44,61 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    gap: 40px;
 }
 
 #search-section {
     display: flex;
+    padding-top: 20px;
 }
 
-#header-info {
+#header-info, #sunrise, #wind, #feels-like {
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+#misc-info {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+#seven-day-forecast {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 20px;
+}
+
+#seven-day-forecast > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#miscs {
+    display: grid;
+    grid-template-columns: 1fr 1fr 2fr;
+    gap: 20px;
+}
+
+.forecast-day {
+    gap: 5px;
+    width: 100px;
+}
+
+.forecast-logo {
+    height: 25px;
+    width: 25px;
+}
+
+#forecast-icon {
+    height: 40px;
+    width: 40px;
+}
+
+.forecast-day, #feels-like, #sunrise, #wind {
+    padding: 10px;
+    background-color: rgb(166, 166, 166);
+    border-radius: 5px;
 }
