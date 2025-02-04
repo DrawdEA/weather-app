@@ -18,8 +18,6 @@ async function getWeather(place) {
         console.error(error.message);
         throw error;
     }
-    
-    
 }
 
 // Listen for when the form is submitted

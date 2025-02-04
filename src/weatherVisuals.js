@@ -82,8 +82,6 @@ const weatherVisuals = (() => {
         updateTemp();
     }
 
-    
-
     function changeTemp() {
         isFarenheit = !isFarenheit;
         updateTemp();

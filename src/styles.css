@@ -41,10 +41,14 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Main styling */
 body {
+    font-family: "Roboto", sans-serif;
+    color: white;
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 40px;
+    background-image: url("./minimalistWallpaper.jpg");
+    background-size: cover;
 }
 
 #search-section {
@@ -56,6 +60,25 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+#city {
+    font-size: 1.5rem;
+}
+
+#weather-status, #time {
+    font-size: 1.1rem;
+}
+
+#header-info > h1 {
+    font-size: 3rem;
+}
+
+#forecast-icon {
+    margin-top: 20px;
+    background-color: rgb(0, 0, 0, 0.5);
+    border-radius: 50%;
+    padding: 10px;
 }
 
 #misc-info {
@@ -93,12 +116,35 @@ body {
 }
 
 #forecast-icon {
-    height: 40px;
-    width: 40px;
+    height: 70px;
+    width: 70px;
 }
 
 .forecast-day, #feels-like, #sunrise, #wind {
     padding: 10px;
-    background-color: rgb(166, 166, 166);
+    background-color: rgb(0, 0, 0, 0.5);
     border-radius: 5px;
+}
+
+button {
+    background-color: rgb(0, 0, 0, 0.5);
+    padding: 5px 10px;
+    border: none;
+    color: white;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: rgb(0, 0, 0, 0.7);
+}
+
+input {
+    color: white;
+    border: none;
+    background: transparent;
+    border-bottom: white solid 2px;
+}
+
+#feels-like-temp, #sunrise-data {
+    padding-top: 10px;
 }
