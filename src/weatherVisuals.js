@@ -21,6 +21,8 @@ const weatherVisuals = (() => {
     const gustsData = document.querySelector("#gusts-data");
     const directionData = document.querySelector("#direction-data");
 
+    const changeDisplay = document.querySelector("#change-display");
+
     const images = require.context('./icons', false, /\.svg$/);
 
     function toFahrenheit(num) {
@@ -84,6 +86,7 @@ const weatherVisuals = (() => {
 
     function changeTemp() {
         isFarenheit = !isFarenheit;
+        changeDisplay.textContent = isFarenheit ? "Display Celcius" : "Display Fahrenheit";
         updateTemp();
     }
 
