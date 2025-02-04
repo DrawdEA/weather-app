@@ -38,7 +38,7 @@ const weatherVisuals = (() => {
     function displayWeather(data) {
         // Set data for header info
         city.textContent = data.resolvedAddress;
-        mainCelcius = Number(data.currentConditions.temp)
+        mainCelcius = Number(data.currentConditions.temp);
         temperature.textContent = mainCelcius + "°C";
         weatherStatus.textContent = data.currentConditions.conditions;
         const mainImg = images(`./${data.currentConditions.icon}.svg`);

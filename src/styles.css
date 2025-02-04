@@ -49,6 +49,8 @@ body {
     gap: 40px;
     background-image: url("./minimalistWallpaper.jpg");
     background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
 }
 
 #search-section {
