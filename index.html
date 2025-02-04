@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+<script defer src="main.js"></script></head>
+<body>
+    <section id="search-section">
+        <form id="search-form">
+            <label for="location">
+                <input type="text" id="location">
+            </label>
+            <button type="submit" id="submit-button">Search</button>
+        </form>
+    </section>
+    <section id="header-info">
+        <p id="city"></p>
+        <h1 id="temperature"></h1>
+        <p id="weather-status"></p>
+        <p id="time"></p>
+        <img id="forecast-icon" alt="Forecast Logo">
+    </section>
+    <section id="misc-info">
+        <div id="seven-day-forecast">
+            <div class="forecast-day">
+                <p class="forecast-data"></p>
+                <img class="forecast-logo" alt="Forecast Logo">
+                <p class="forecast-temp"></p>
+            </div>
+            <div class="forecast-day">
+                <p class="forecast-data"></p>
+                <img class="forecast-logo" alt="Forecast Logo">
+                <p class="forecast-temp"></p>
+            </div>
+            <div class="forecast-day">
+                <p class="forecast-data"></p>
+                <img class="forecast-logo" alt="Forecast Logo">
+                <p class="forecast-temp"></p>
+            </div>
+            <div class="forecast-day">
+                <p class="forecast-data"></p>
+                <img class="forecast-logo" alt="Forecast Logo">
+                <p class="forecast-temp"></p>
+            </div>
+            <div class="forecast-day">
+                <p class="forecast-data"></p>
+                <img class="forecast-logo" alt="Forecast Logo">
+                <p class="forecast-temp"></p>
+            </div>
+            <div class="forecast-day">
+                <p class="forecast-data"></p>
+                <img class="forecast-logo" alt="Forecast Logo">
+                <p class="forecast-temp"></p>
+            </div>
+            <div class="forecast-day">
+                <p class="forecast-data"></p>
+                <img class="forecast-logo" alt="Forecast Logo">
+                <p class="forecast-temp"></p>
+            </div>
+        </div>
+        <div id="miscs">
+            <div id="feels-like">
+                <p id="feels-like-header">Feels Like</p>
+                <h3 id="feels-like-temp"></h3>
+            </div>
+            <div id="sunrise">
+                <p id="sunrise-header">Sunrise</p>
+                <h3 id="sunrise-data"></h3>
+            </div>
+            <div id="wind">
+                <p id="wind-data"></p>
+                <p id="gusts-data"></p>
+                <p id="direction-data"></p>
+            </div>
+        </div>
+    </section>
+    <section id="change-temp">
+        <button id="change-display">Display Farenheit</button>
+    </section>
+    
+</body>
+</html>
